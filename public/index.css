@@ -487,11 +487,6 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
-/* body {
-  background-color: rgb(63, 63, 63);
-
-} */
-
 body {
   display: flex;
   justify-content: center;
@@ -520,16 +515,21 @@ body {
 #header #textContainer p {
   color: white;
   margin: 0 10px;
+  align-self: center;
 }
 
-#header #textContainer p::first-child {
+#header #textContainer p:first-child {
   color: rgb(0, 174, 255);
-  margin-right: 50px;
+  font-size: 1.75rem;
+  margin-right: 25px;
 }
 
 #header #textContainer .circle {
-  width: 15px;
-  background-color: #1A9FFF;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1a9fff;
+  align-self: center;
 }
 
 #middle {

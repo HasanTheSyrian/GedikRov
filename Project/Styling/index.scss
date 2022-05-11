@@ -6,11 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-color: rgb(63, 63, 63);
-
-} */
-
 body {
   @include flexCenter(center, center);
 
@@ -36,21 +31,24 @@ body {
     p {
       color: white;
       margin: 0 10px;
+      align-self: center;
     }
 
-    & p::first-child {
+    & p:first-child {
       color: rgb(0, 174, 255);
-      margin-right: 50px;
+      font-size: 1.75rem;
+      margin-right: 25px;
     }
 
     & .circle {
+      // width: 20px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #1a9fff;
 
-      width: 15px;
-      background-color: #1A9FFF;
-
+      align-self: center;
     }
-
-
   }
 }
 
